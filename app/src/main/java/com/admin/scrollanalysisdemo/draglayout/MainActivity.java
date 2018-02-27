@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -17,7 +18,10 @@ import android.widget.ImageView;
 import com.admin.scrollanalysisdemo.R;
 import com.nineoldandroids.view.ViewHelper;
 
-public class MainActivity extends ActionBarActivity implements OnClickListener {
+/**
+ * 使用ViewDragLayout实现仿QQ侧滑菜单
+ */
+public class MainActivity extends AppCompatActivity implements OnClickListener {
 	private DragLayout mDragLayout;
 	private ImageView topbarLeftImage;
 	private ViewPager mViewPager;

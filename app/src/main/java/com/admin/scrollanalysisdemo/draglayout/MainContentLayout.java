@@ -4,9 +4,10 @@ import android.content.Context;
 import android.support.v4.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-public class MainContentLayout extends RelativeLayout {
+public class MainContentLayout extends LinearLayout {
 
 	private DragLayout mDragLayout;
 

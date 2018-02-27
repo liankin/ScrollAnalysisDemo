@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#86c9c7c7"
+    android:id="@+id/drag_view_group"
     android:orientation="horizontal">
     <RelativeLayout
-        android:id="@+id/id_container_menu"
-        android:background="#ea8686"
+        android:id="@+id/layout_menu"
+        android:background="#84acabab"
         android:gravity="center"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="match_parent"
         android:padding="10dp">
         <TextView
@@ -17,16 +18,35 @@
             android:text="Menu"
             android:textSize="40sp"/>
     </RelativeLayout>
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/layout_main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#a0cde9">
-        <TextView
-            android:id="@+id/id_content_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Main"
-            android:textSize="40sp"/>
-    </RelativeLayout>
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#5cabe4" >
+            <ImageView
+                android:id="@+id/topbar_left_button"
+                android:layout_width="38dip"
+                android:layout_height="38dip"
+                android:layout_gravity="left|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/drawer_press" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#d9ecf9">
+            <TextView
+                android:id="@+id/id_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main"
+                android:textSize="40sp"/>
+        </LinearLayout>
+    </LinearLayout>
 </com.admin.scrollanalysisdemo.DragViewGroup>

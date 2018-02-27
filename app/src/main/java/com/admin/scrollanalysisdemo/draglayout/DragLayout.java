@@ -77,13 +77,10 @@ public class DragLayout extends FrameLayout {
 
 	ViewDragHelper.Callback mCallBack = new ViewDragHelper.Callback() {
 		public void onEdgeTouched(int edgeFlags, int pointerId) {
-			
-			
-		};
-		
+		}
 		public void onEdgeDragStarted(int edgeFlags, int pointerId) {
 			 mDragHelper.captureChildView(mMainContent, pointerId); 
-		};
+		}
 		// 决定child是否可被拖拽。返回true则进行拖拽。
 		@Override
 		public boolean tryCaptureView(View child, int pointerId) {
