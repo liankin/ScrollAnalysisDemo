@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.admin.scrollanalysisdemo.DragViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#86c9c7c7"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/id_container_menu"
+        android:background="#ea8686"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="40sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0cde9">
+        <TextView
+            android:id="@+id/id_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Main"
+            android:textSize="40sp"/>
+    </RelativeLayout>
+</com.admin.scrollanalysisdemo.DragViewGroup>
